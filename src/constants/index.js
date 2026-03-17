@@ -375,8 +375,10 @@ const personalInfo = {
 };
 
 const publicUrls = {
-  resume:
-    "https://drive.google.com/file/d/1RSZ_4N_vU7bRWSbJPCCOFkzepfOmZW5k/view?usp=sharing",
+  resumes: {
+    general: "https://drive.google.com/file/d/10eIEyTdsA__xlOHtcZwgZ1l8GTK07kTy/view?usp=sharing",
+    specialised: "https://drive.google.com/file/d/19AJxMVyIAirvzeY7swbZ4tbaCXl91jAv/view?usp=drive_link",
+  },
   socialProfiles: {
     linkedin: {
       title: "linkedin",

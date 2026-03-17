@@ -9,7 +9,7 @@ import {
   publicUrls,
 } from "../constants";
 
-const Navbar = () => {
+const Navbar = ({ onResumeClick }) => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
@@ -52,14 +52,9 @@ const Navbar = () => {
 
           <li
             className={`text-secondary text-[18px] font-medium cursor-pointer hover:text-white`}
+            onClick={onResumeClick}
           >
-            <a
-              href={publicUrls.resume}
-              download="Golla_Vishnu_Resume.pdf"
-              target="_blank"
-            >
-              Resume
-            </a>
+            Resume
           </li>
         </ul>
 
@@ -92,14 +87,12 @@ const Navbar = () => {
 
               <li
                 className={`text-secondary text-[18px] font-medium cursor-pointer hover:text-white`}
+                onClick={() => {
+                  setToggle(!toggle);
+                  onResumeClick();
+                }}
               >
-                <a
-                  href={publicUrls.resume}
-                  download="Golla_Vishnu_Resume.pdf"
-                  target="_blank"
-                >
-                  Resume
-                </a>
+                Resume
               </li>
             </ul>
           </div>
