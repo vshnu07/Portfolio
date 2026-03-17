@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX} py-5 w-full flex items-center fixed top-0 z-20 bg-primary`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto gap-10">
         <Link
           to={navigationPaths.home}
           className="flex items-center gap-2"
@@ -27,15 +27,18 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            {personalInfo.name} &nbsp;
-            <span className="lg:block hidden">| {personalInfo.role}</span>{" "}
-            &nbsp;
-            <span className="lg:block hidden">| {personalInfo.mobile}</span>
-          </p>
+          <div className="flex-shrink-0">
+            <p className="text-white text-[16px] lg:text-[18px] xl:text-[20px] font-bold cursor-pointer flex items-center whitespace-nowrap">
+              {personalInfo.name}
+              <span className="hidden lg:inline text-secondary px-2">|</span>
+              <span className="hidden lg:inline font-bold">{personalInfo.role}</span>
+              <span className="hidden 2xl:inline text-secondary px-2">|</span>
+              <span className="hidden 2xl:inline font-bold">{personalInfo.mobile}</span>
+            </p>
+          </div>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden lg:flex flex-row gap-4 xl:gap-8">
           {navLinks.map((link) => (
             <li
               key={link.id}

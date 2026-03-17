@@ -42,6 +42,8 @@ import musicStreaming from "./projects/musicStreaming.png";
 import fakeAccounts from "./projects/fakeAccounts.png";
 import imageClassification from "./projects/imageClassification.png";
 import stockPrediction from "./projects/stockPrediction.png";
+import rubiks_cube from "./projects/rubiks_cube.png";
+import dsa_custom from "./projects/dsa_custom.svg";
 
 export {
   logo,
@@ -86,4 +88,6 @@ export {
   fakeAccounts,
   imageClassification,
   stockPrediction,
+  rubiks_cube,
+  dsa_custom,
 };
