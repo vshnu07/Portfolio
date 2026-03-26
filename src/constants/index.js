@@ -344,7 +344,7 @@ const achievements = [
   },
   {
     title: "Achieved Top 5 Team Ranking in Code Off Duty – A Web Hackathon",
-    icon: web, 
+    icon: web,
     iconBg: "#E6DEDD",
     date: "2024",
     points: [
@@ -376,7 +376,7 @@ const personalInfo = {
 
 const publicUrls = {
   resumes: {
-    general: "https://drive.google.com/file/d/10eIEyTdsA__xlOHtcZwgZ1l8GTK07kTy/view?usp=sharing",
+    general: "https://drive.google.com/file/d/19TkHwjuaNsYOMRYpJsY-HsiaFrNNnqSG/view?usp=sharing",
     specialised: "https://drive.google.com/file/d/19AJxMVyIAirvzeY7swbZ4tbaCXl91jAv/view?usp=drive_link",
   },
   socialProfiles: {
